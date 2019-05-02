@@ -86,5 +86,4 @@ FROM api.sitedaily
 WHERE clientid IS NOT NULL AND siteid IS NOT NULL AND day IS NOT NULL
 PRIMARY KEY (clientid, siteid, day);
 
-
 select clientid, siteid, day, count(*) from api.sitedailyview group by clientid, siteid, day
